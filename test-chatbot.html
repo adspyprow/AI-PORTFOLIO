@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            color: #555;
+        }
+        .content p {
+            color: #777;
+            font-size: 16px;
+        }
+        .cta-button {
+            background-color: #0066ff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #0055cc;
+        }
+
+        /* Floating chatbot style */
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            z-index: 9999;
+            display: none; /* Initially hidden */
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Optional: You can further modify styling here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI Chatbot Portfolio</h1>
+        <p>Welcome to my AI chatbot portfolio page. Here you can test the chatbot I built for businesses. Feel free to interact with it!</p>
+    </header>
+
+    <div class="content">
+        <h2>Test the AI Chatbot</h2>
+        <p>This AI chatbot can help businesses with customer support, FAQs, and much more. Try interacting with it below to experience its capabilities.</p>
+
+        <button class="cta-button" onclick="showChatbot()">Test Chatbot Now</button>
+    </div>
+
+    <!-- Floating Chatbot -->
+    <div id="chatbot-container">
+        <iframe src="https://www.chatbase.co/chatbot-iframe/IIM8hwUScah0OZH4dPEew" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <script>
+        function showChatbot() {
+            // Hide the button and show the chatbot
+            document.querySelector('.cta-button').style.display = 'none';
+            document.getElementById('chatbot-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
